@@ -1,0 +1,8 @@
+<body align="center" bgcolor="black">
+	<font size="8" color="white">Select the Dificulty</font>
+	<form action="player.htm" method="post">
+		<h1><button><input type="hidden" value="1" name="dificulty">Easy</h1></button>
+		<h1><button><input type="hidden" value="2" name="dificulty">Normal</h1></button>
+		<h1><button><input type="hidden" value="3" name="dificulty">Hard</h1></button>
+	</form>
+</body>
