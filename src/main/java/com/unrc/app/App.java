@@ -44,8 +44,6 @@ public class App{
 	  	MinMaxEngine<AtomProblem,AtomState> engine = new MinMaxEngine<AtomProblem,AtomState>(atoms,dificulty);
 
 	  	atoms = new AtomProblem(engine.computeSuccessor(atoms.initialState().clone()));
-
-	  	
 	  	attributes.put("atom",atoms.initialState());
       return new ModelAndView(attributes, "play.moustache");
 		},
