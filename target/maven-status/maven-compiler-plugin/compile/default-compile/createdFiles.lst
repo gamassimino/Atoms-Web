@@ -1,2 +1,10 @@
+com/unrc/app/AtomState.class
 com/unrc/app/App.class
+com/unrc/app/AdversarySearchEngine.class
+com/unrc/app/AtomProblem.class
+com/unrc/app/Doublet.class
+com/unrc/app/MinMaxEngine.class
+com/unrc/app/Atom.class
+com/unrc/app/AdversarySearchState.class
 com/unrc/app/MustacheTemplateEngine.class
+com/unrc/app/AdversarySearchProblem.class

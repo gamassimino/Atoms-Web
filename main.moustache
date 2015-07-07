@@ -1,8 +1,6 @@
 <body align="center" bgcolor="black">
 	<img src="atomsLogo.png">
 	<form action="/dificulty" method="post">
-		<h1><button><input type="hidden" value="1" name="dificulty">Play New Game</h1></button>
-		<h1><button><input>Play New Game</h1></button>
 		<h1><button>Play New Game</h1></button>
 	</form>
 </body>

@@ -1,8 +1,6 @@
 package com.unrc.app;
 
 import static spark.Spark.*;
-//import com.unrc.app.User;
-// import org.javalite.activejdbc.Base;
 import java.util.Scanner;
 import java.util.*;
 import java.lang.Object;
@@ -17,27 +15,36 @@ public class App{
     externalStaticFileLocation("./media");
 
 	  get("/main", (request, response) -> {
-	      return new ModelAndView(null, "main.moustache");
+	    return new ModelAndView(null, "main.moustache");
 		},
-	      new MustacheTemplateEngine()
+	    new MustacheTemplateEngine()
 	  );
 
-	  get("/dificulty", (request, response) -> {
-	      return new ModelAndView(null, "dificulty.moustache");
+		post("/dificulty", (request, response) -> {
+      return new ModelAndView(null, "dificulty.moustache");
 		},
-	      new MustacheTemplateEngine()
+      new MustacheTemplateEngine()
 	  );
 
-	  get("/player", (request, response) -> {
-	      return new ModelAndView(null, "player.moustache");
+	  post("/player", (request, response) -> {
+	  	request.session(true);
+	  	Integer dificulty = Integer.parseInt(request.queryParams("dificulty"));
+	  	request.session().attribute("dificulty",dificulty);
+      return new ModelAndView(null, "player.moustache");
 		},
-	      new MustacheTemplateEngine()
+      new MustacheTemplateEngine()
 	  );
 
-	  get("/play", (request, response) -> {
-	      return new ModelAndView(null, "play.moustache");
+	  post("/play", (request, response) -> {
+	  	Integer dificulty = request.session().attribute("dificulty");
+	  	Integer player = Integer.parseInt(request.queryParams("player"));
+	  	
+	  	AtomProblem atoms = new AtomProblem();
+	  	// MinMaxEngine<AtomProblem,AtomState> engine = new MinMaxEngine<AtomProblem,AtomState>(atoms,dificulty);
+
+      return new ModelAndView(null, "play.moustache");
 		},
-	      new MustacheTemplateEngine()
+      new MustacheTemplateEngine()
 	  );
 
   }
