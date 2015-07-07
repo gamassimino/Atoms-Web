@@ -36,7 +36,7 @@ public class App{
 	  );
 
 	  post("/play", (request, response) -> {
-	   Map<String, Object> attributes = new HashMap<>();
+	   	Map<String, Object> attributes = new HashMap<>();
 	  	Integer dificulty = request.session().attribute("dificulty");
 	  	Integer player = Integer.parseInt(request.queryParams("player"));
 	  	
@@ -44,6 +44,8 @@ public class App{
 	  	MinMaxEngine<AtomProblem,AtomState> engine = new MinMaxEngine<AtomProblem,AtomState>(atoms,dificulty);
 
 	  	atoms = new AtomProblem(engine.computeSuccessor(atoms.initialState().clone()));
+
+	  	
 	  	attributes.put("atom",atoms.initialState());
       return new ModelAndView(attributes, "play.moustache");
 		},
