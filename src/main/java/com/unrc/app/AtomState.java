@@ -34,20 +34,28 @@ public class AtomState implements AdversarySearchState{
 /* this method give us a ide how to look the board*/
 	public String toString(){
 		String string = "";
+		string +=("<table align="+'"'+"center"+'"'+" bgcolor="+'"'+"blue"+'"'+">");
 		for (int i=0; i<6; i++) {
+			string +=("<tr>");
 			for (int j = 0; j<10; j++) {
-				if(board[i][j] == null)
-					string +="\033[30m"+"0"+" ";
+				if(board[i][j] == null){
+					string +=("<td><img src="+'"'+"none.png"+'"'+'"'+"width="+'"'+"70"+'"'+"height="+'"'+"70"+'"'+"></img>");
+					string +=("</td>");
+					}
 				else{
-					if(board[i][j].getPlayer() == 1)
-						string += "\033[31m"+board[i][j].getNumber()+" "+"\033[30m"+"";
-					
-					if(board[i][j].getPlayer() == 2)
-						string += "\033[32m"+board[i][j].getNumber()+" "+"\033[30m"+"";
+					if(board[i][j].getPlayer() == 1){
+						string +=("<td><img src="+'"'+board[i][j].getNumber()+"red.png"+'"'+'"'+"width="+'"'+"70"+'"'+"height="+'"'+"70"+'"'+ "></img>");
+						string +=("</td>");
+					}
+					if(board[i][j].getPlayer() == 2){
+						string +=("<td><img src="+'"'+board[i][j].getNumber()+"yellow.png"+'"'+'"'+"width="+'"'+"70"+'"'+"height="+'"'+"70"+'"'+"></img>");
+						string +=("</td>");
+					}
 				}
 			}
-			string += "\n";
+			string +=("</tr>");
 		}
+		string +=("</table>");
 		return string;
 	}
 
