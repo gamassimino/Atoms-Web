@@ -39,22 +39,23 @@ public class App{
 	   	Map<String, Object> attributes = new HashMap<>();
 	  	Integer dificulty = request.session().attribute("dificulty");
 	  	Integer player = Integer.parseInt(request.queryParams("player"));
+	  	AtomProblem atoms = new AtomProblem();
 	  	//===================================NEW CODE==========================================================
-	  	String position = request.session().attributes("position");
+	  	String position = request.session().attribute("position");
+	  	char[] positionArray = position.toCharArray();
 	  	int i;
 	  	int j;
 	  	if (position.length()==2){//first number is a row and second is a column
-	  		i = position[0];
-	  		j = position[1];
+	  		i = positionArray[0];
+	  		j = positionArray[1];
 	  		atoms = new AtomProblem (atoms.putAnAtom(atoms.initialState(),(i-1),(j-1),new Atom(player)));
 	  	}
 	  	else{//first pair of number is a row and the other number is a column
 	  		i = 10;
-	  		j = position[3];
+	  		j = positionArray[3];
 	  		atoms = new AtomProblem (atoms.putAnAtom(atoms.initialState(),(i-1),(j-1),new Atom(player)));
 	  	}
 	  	//====================================================================================================
-	  	AtomProblem atoms = new AtomProblem();
 	  	MinMaxEngine<AtomProblem,AtomState> engine = new MinMaxEngine<AtomProblem,AtomState>(atoms,dificulty);
 
 	  	atoms = new AtomProblem(engine.computeSuccessor(atoms.initialState().clone()));
