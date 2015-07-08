@@ -1,3 +1,326 @@
 <body align="center" bgcolor="black">
 	<font size="8" color="white">play</font>
+	<h1></h1>
+	<table align="center" border="1">
+		<tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="11" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="12" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="13" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="14" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="15" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="16" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="17" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="18" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="19" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="110" name="position"
+	    	</td>
+	    </form>
+    </tr>
+
+    <tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="21" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="22" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="23" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="24" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="25" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="26" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="27" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="28" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="29" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="210" name="position"
+	    	</td>
+	    </form>
+    </tr>
+
+    <tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="31" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="32" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="33" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="34" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="35" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="36" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="37" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="38" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="39" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="310" name="position"
+	    	</td>
+	    </form>
+    </tr>
+
+    <tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="41" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="42" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="43" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="44" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="45" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="46" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="47" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="48" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="49" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="410" name="position"
+	    	</td>
+	    </form>
+    </tr>
+
+    <tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="51" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="52" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="53" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="54" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="55" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="56" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="57" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="58" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="59" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="510" name="position"
+	    	</td>
+	    </form>
+    </tr>
+
+    <tr>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="61" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="62" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="63" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="64" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="65" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="66" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="67" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="68" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="69" name="position">
+	    	</td> 
+	    </form>
+	    <form action="/play" method="post">
+	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
+	    	<input type="hidden" value="610" name="position"
+	    	</td>
+	    </form>
+    </tr>
+    </table>
+<!-- 	{{#atom}}
+		{{{toString}}}
+	{{/atom}} -->
 </body>
