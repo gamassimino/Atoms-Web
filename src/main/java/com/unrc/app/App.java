@@ -55,19 +55,29 @@ public class App{
   	new MustacheTemplateEngine()
   );
 
-
+  /*Tiene varios bugs al momento de jugar por ejemplo cuandoqueremos insertar una ficha en la posicio derecha inferiror la ficha por defecto
+  al igual como otros mas que cuando alguien ganas nomuestra el tablero con todas las fichas explotadas hay que solucionarlo*/
 	post("/play",(request,response) -> {
 		Map<String, Object> attributes = new HashMap<>();
   	String row = request.queryParams("row");
   	String column =request.queryParams("column");
-  	// AtomProblem Variable.atoms = (AtomProblem)request.queryParams("atom");
   	Integer dificulty = request.session().attribute("dificulty");
+    String winner = "";
   	Variable.engine = new MinMaxEngine<AtomProblem,AtomState>(Variable.atoms,dificulty);
   	if (Variable.turn % 2==0)	
 	  	Variable.atoms = new AtomProblem(Variable.engine.computeSuccessor(Variable.atoms.initialState().clone()));
   	else
-  		Variable.atoms = new AtomProblem (Variable.atoms.putAnAtom(Variable.atoms.initialState(),(Integer.parseInt(row)),(Integer.parseInt(column)),new Atom(2)));
-  	Variable.turn++;
+  		Variable.atoms = new AtomProblem(Variable.atoms.putAnAtom(Variable.atoms.initialState(),(Integer.parseInt(row)),(Integer.parseInt(column)),new Atom(2)));
+  	if(Variable.atoms.end(Variable.atoms.initialState())){
+      attributes.put("atom",Variable.atoms.initialState());
+      if(Variable.turn % 2==0)
+        winner = "Computer";
+      else
+        winner = "Human";
+      attributes.put("winner",winner);
+      return new ModelAndView(attributes,"winner.moustache");
+    }
+    Variable.turn++;
   	attributes.put("atom",Variable.atoms.initialState());
   	return new ModelAndView(attributes,"play.moustache");
 	},

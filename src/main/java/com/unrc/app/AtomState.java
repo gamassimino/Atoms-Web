@@ -33,18 +33,22 @@ public class AtomState implements AdversarySearchState{
 
 /* this method give us a ide how to look the board*/
 	public String toString(){
+		AtomProblem problem = new AtomProblem();
+		boolean ends = problem.end(this);
 		String string = "";
 		string +=("<table align="+'"'+"center"+'"'+" bgcolor="+'"'+"white"+'"'+" border="+'"'+"1"+'"'+">");
 		for (int i=0; i<6; i++) {
 			string +=("<tr>");
 			for (int j = 0; j<10; j++) {
 				if(board[i][j] == null){
-					string +=("<form action="+'"'+"/play"+'"'+" method="+'"'+"post"+'"'+">");
+					if(!ends)
+						string +=("<form action="+'"'+"/play"+'"'+" method="+'"'+"post"+'"'+">");
 					string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+"none.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+"></button>");
 					string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+i+'"'+" name="+'"'+"row"+'"'+">");
 					string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+j+'"'+" name="+'"'+"column"+'"'+">");
 					string +=("</td>");
-					string +=("</form>");
+					if(!ends)
+						string +=("</form>");
 					}
 				else{
 					if(board[i][j].getPlayer() == 1){
@@ -52,12 +56,15 @@ public class AtomState implements AdversarySearchState{
 						string +=("</td>");
 					}
 					if(board[i][j].getPlayer() == 2){
-						string +=("<form action="+'"'+"/play"+'"'+" method="+'"'+"post"+'"'+">");
+
+						if(!ends)
+							string +=("<form action="+'"'+"/play"+'"'+" method="+'"'+"post"+'"'+">");
 						string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+board[i][j].getNumber()+"yellow.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+"></button>");
 						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+i+'"'+" name="+'"'+"row"+'"'+">");
 						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+j+'"'+" name="+'"'+"column"+'"'+">");
 						string +=("</td>");
-						string +=("</form>");
+						if(!ends)
+							string +=("</form>");
 					}
 				}
 			}
