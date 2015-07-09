@@ -1,56 +1,66 @@
 <body align="center" bgcolor="black">
 	<font size="8" color="white">play</font>
 	<h1></h1>
-	<table align="center" border="1">
+<!-- 	<table align="center" border="1">
 		<tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="11" name="position">
+	    	<input type="hidden" value="11" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="12" name="position">
+	    	<input type="hidden" value="12" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="13" name="position">
+	    	<input type="hidden" value="13" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="14" name="position">
+	    	<input type="hidden" value="14" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="15" name="position">
+	    	<input type="hidden" value="15" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="16" name="position">
+	    	<input type="hidden" value="16" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="17" name="position">
+	    	<input type="hidden" value="17" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="18" name="position">
+	    	<input type="hidden" value="18" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="19" name="position">
+	    	<input type="hidden" value="19" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="110" name="position"
+	    	<input type="hidden" value="110" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
@@ -58,52 +68,62 @@
     <tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="21" name="position">
+	    	<input type="hidden" value="21" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="22" name="position">
+	    	<input type="hidden" value="22" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="23" name="position">
+	    	<input type="hidden" value="23" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="24" name="position">
+	    	<input type="hidden" value="24" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="25" name="position">
+	    	<input type="hidden" value="25" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="26" name="position">
+	    	<input type="hidden" value="26" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="27" name="position">
+	    	<input type="hidden" value="27" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="28" name="position">
+	    	<input type="hidden" value="28" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="29" name="position">
+	    	<input type="hidden" value="29" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="210" name="position"
+	    	<input type="hidden" value="210" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
@@ -111,52 +131,62 @@
     <tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="31" name="position">
+	    	<input type="hidden" value="31" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="32" name="position">
+	    	<input type="hidden" value="32" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="33" name="position">
+	    	<input type="hidden" value="33" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="34" name="position">
+	    	<input type="hidden" value="34" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="35" name="position">
+	    	<input type="hidden" value="35" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="36" name="position">
+	    	<input type="hidden" value="36" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="37" name="position">
+	    	<input type="hidden" value="37" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="38" name="position">
+	    	<input type="hidden" value="38" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="39" name="position">
+	    	<input type="hidden" value="39" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="310" name="position"
+	    	<input type="hidden" value="310" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
@@ -164,52 +194,62 @@
     <tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="41" name="position">
+	    	<input type="hidden" value="41" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="42" name="position">
+	    	<input type="hidden" value="42" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="43" name="position">
+	    	<input type="hidden" value="43" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="44" name="position">
+	    	<input type="hidden" value="44" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="45" name="position">
+	    	<input type="hidden" value="45" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="46" name="position">
+	    	<input type="hidden" value="46" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="47" name="position">
+	    	<input type="hidden" value="47" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="48" name="position">
+	    	<input type="hidden" value="48" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="49" name="position">
+	    	<input type="hidden" value="49" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="410" name="position"
+	    	<input type="hidden" value="410" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
@@ -217,52 +257,62 @@
     <tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="51" name="position">
+	    	<input type="hidden" value="51" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="52" name="position">
+	    	<input type="hidden" value="52" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="53" name="position">
+	    	<input type="hidden" value="53" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="54" name="position">
+	    	<input type="hidden" value="54" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="55" name="position">
+	    	<input type="hidden" value="55" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="56" name="position">
+	    	<input type="hidden" value="56" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="57" name="position">
+	    	<input type="hidden" value="57" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="58" name="position">
+	    	<input type="hidden" value="58" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="59" name="position">
+	    	<input type="hidden" value="59" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="510" name="position"
+	    	<input type="hidden" value="510" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
@@ -270,57 +320,67 @@
     <tr>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="61" name="position">
+	    	<input type="hidden" value="61" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="62" name="position">
+	    	<input type="hidden" value="62" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="63" name="position">
+	    	<input type="hidden" value="63" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="64" name="position">
+	    	<input type="hidden" value="64" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="65" name="position">
+	    	<input type="hidden" value="65" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="66" name="position">
+	    	<input type="hidden" value="66" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="67" name="position">
+	    	<input type="hidden" value="67" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="68" name="position">
+	    	<input type="hidden" value="68" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="69" name="position">
+	    	<input type="hidden" value="69" name="row">
+	    	<input type="hidden" value="0000" name="column">
 	    	</td> 
 	    </form>
 	    <form action="/play" method="post">
 	    	<td width="20" align="center"><button type="submit"><img src="1red.png" height="60" width="60"></button>
-	    	<input type="hidden" value="610" name="position"
+	    	<input type="hidden" value="610" name="row">
+	    	<input type="hidden" value="0000" name="column"
 	    	</td>
 	    </form>
     </tr>
-    </table>
-<!-- 	{{#atom}}
+    </table> -->
+	{{#atom}}
 		{{{toString}}}
-	{{/atom}} -->
+	{{/atom}}
 </body>

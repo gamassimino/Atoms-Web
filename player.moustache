@@ -1,11 +1,11 @@
 <body align="center" bgcolor="black">
 	<font size="8" color="white">Chose...</font>
 
-	<form action="/play" method="post">
+	<form action="/playAux" method="post">
 		<h1><button><input type="hidden" value="1" name="player">Player 1</h1></button>
 	</form>	
 
-	<form action="/play" method="post">
+	<form action="/playAux" method="post">
 		<h1><button><input type="hidden" value="2" name="player">Player 2</h1></button>
 	</form>
 	
