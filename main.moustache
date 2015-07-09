@@ -1,5 +1,5 @@
 <body align="center" bgcolor="black">
-	<img src="atomsLogo.png">
+	<img src="atoms-gif.gif">
 	<form action="/dificulty" method="post">
 		<h1><button>Play New Game</h1></button>
 	</form>
