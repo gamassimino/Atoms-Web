@@ -1,16 +1,33 @@
-<body align="center" bgcolor="black">
-	<font size="8" color="white">Select the Dificulty</font>
+<html>
+	<style>
+		button{
+		  font-weight: bold;
+		  width: 100%;
+		  margin-top: 28px;
+		  height: 55px;
+		  border-radius: 11px;
+		  font-size: 22px;
+		  box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.84);
+		  border: 1px solid #FF0;
+		  background: none repeat scroll 0% 0% #DF0008;
+		  color: #FFE600;
+		  text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.84);
+		}
+	</style>
+	<body align="center" bgcolor="black">
+		<font size="8" color="white">Select the Dificulty</font>
 
-	<form action="/player" method="post">
-		<h1><button><input type="hidden" value="1" name="dificulty">Easy</h1></button>
-	</form>
+		<form action="/player" method="post">
+			<h1><button><input type="hidden" value="1" name="dificulty">Easy</h1></button>
+		</form>
 
-	<form action="/player" method="post">
-		<h1><button><input type="hidden" value="2" name="dificulty">Normal</h1></button>
-	</form>
+		<form action="/player" method="post">
+			<h1><button><input type="hidden" value="2" name="dificulty">Normal</h1></button>
+		</form>
 
-	<form action="/player" method="post">
-		<h1><button><input type="hidden" value="3" name="dificulty">Hard</h1></button>
-	</form>
-	
-</body>
+		<form action="/player" method="post">
+			<h1><button><input type="hidden" value="3" name="dificulty">Hard</h1></button>
+		</form>
+		
+	</body>
+</html>

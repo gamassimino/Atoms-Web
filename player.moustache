@@ -1,12 +1,29 @@
-<body align="center" bgcolor="black">
-	<font size="8" color="white">Chose who begins...</font>
+<html>
+	<style>
+		button{
+		  font-weight: bold;
+		  width: 100%;
+		  margin-top: 28px;
+		  height: 55px;
+		  border-radius: 11px;
+		  font-size: 22px;
+		  box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.84);
+		  border: 1px solid #FF0;
+		  background: none repeat scroll 0% 0% #DF0008;
+		  color: #FFE600;
+		  text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.84);
+		}
+	</style>
+	<body align="center" bgcolor="black">
+		<font size="8" color="white">Chose who begins...</font>
 
-	<form action="/playAux" method="post">
-		<h1><button><input type="hidden" value="1" name="player">Human</h1></button>
-	</form>	
+		<form action="/playAux" method="post">
+			<h1><button><input type="hidden" value="1" name="player">Human</h1></button>
+		</form>	
 
-	<form action="/playAux" method="post">
-		<h1><button><input type="hidden" value="2" name="player">computer</h1></button>
-	</form>
-	
-</body>
+		<form action="/playAux" method="post">
+			<h1><button><input type="hidden" value="2" name="player">computer</h1></button>
+		</form>
+		
+	</body>
+</html>
