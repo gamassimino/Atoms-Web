@@ -46,11 +46,9 @@ public class App{
   post("/playAux", (request, response) -> {
    	Map<String, Object> attributes = new HashMap<>();
   	Integer dificulty = request.session().attribute("dificulty");
-  	Integer player = Integer.parseInt(request.queryParams("player"));
+  	Variable.turn = Integer.parseInt(request.queryParams("player"));
   	
   	Variable.atoms  = new AtomProblem();
-  	Variable.engine = new MinMaxEngine<AtomProblem,AtomState>(Variable.atoms,dificulty);
-  	Variable.atoms = new AtomProblem(Variable.engine.computeSuccessor(Variable.atoms.initialState().clone()));
   	attributes.put("atom",Variable.atoms.initialState());
   	return new ModelAndView(attributes, "play.moustache");
 	},
@@ -63,11 +61,13 @@ public class App{
   	String row = request.queryParams("row");
   	String column =request.queryParams("column");
   	// AtomProblem Variable.atoms = (AtomProblem)request.queryParams("atom");
-  	request.session().removeAttribute("atom");
   	Integer dificulty = request.session().attribute("dificulty");
-  	 Variable.engine = new MinMaxEngine<AtomProblem,AtomState>(Variable.atoms,dificulty);
-  	
-  	Variable.atoms = new AtomProblem(Variable.engine.computeSuccessor(Variable.atoms.initialState().clone()));
+  	Variable.engine = new MinMaxEngine<AtomProblem,AtomState>(Variable.atoms,dificulty);
+  	if (Variable.turn % 2==0)	
+	  	Variable.atoms = new AtomProblem(Variable.engine.computeSuccessor(Variable.atoms.initialState().clone()));
+  	else
+  		Variable.atoms = new AtomProblem (Variable.atoms.putAnAtom(Variable.atoms.initialState(),(Integer.parseInt(row)),(Integer.parseInt(column)),new Atom(2)));
+  	Variable.turn++;
   	attributes.put("atom",Variable.atoms.initialState());
   	return new ModelAndView(attributes,"play.moustache");
 	},

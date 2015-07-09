@@ -1,12 +1,12 @@
 <body align="center" bgcolor="black">
-	<font size="8" color="white">Chose...</font>
+	<font size="8" color="white">Chose who begins...</font>
 
 	<form action="/playAux" method="post">
-		<h1><button><input type="hidden" value="1" name="player">Player 1</h1></button>
+		<h1><button><input type="hidden" value="1" name="player">Human</h1></button>
 	</form>	
 
 	<form action="/playAux" method="post">
-		<h1><button><input type="hidden" value="2" name="player">Player 2</h1></button>
+		<h1><button><input type="hidden" value="2" name="player">computer</h1></button>
 	</form>
 	
 </body>
