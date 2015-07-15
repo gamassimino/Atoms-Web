@@ -22,7 +22,7 @@
 		</form>	
 
 		<form action="/playAux" method="post">
-			<h1><button><input type="hidden" value="2" name="player">computer</h1></button>
+			<h1><button><input type="hidden" value="2" name="player">Computer</h1></button>
 		</form>
 		
 	</body>

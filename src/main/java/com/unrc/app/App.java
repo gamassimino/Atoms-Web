@@ -61,6 +61,7 @@ public class App{
 		Map<String, Object> attributes = new HashMap<>();
   	String row = request.queryParams("row");
   	String column =request.queryParams("column");
+    String player =request.queryParams("player");
   	Integer dificulty = request.session().attribute("dificulty");
     String winner = "";
   	Variable.engine = new MinMaxEngine<AtomProblem,AtomState>(Variable.atoms,dificulty);
@@ -70,16 +71,16 @@ public class App{
   		Variable.atoms = new AtomProblem(Variable.atoms.putAnAtom(Variable.atoms.initialState(),(Integer.parseInt(row)),(Integer.parseInt(column)),new Atom(2)));
   	if(Variable.atoms.end(Variable.atoms.initialState())){
       attributes.put("atom",Variable.atoms.initialState());
-      if(Variable.turn % 2==0)
-        winner = "Computer";
-      else
+      if(player == "1")
         winner = "Human";
+      else
+        winner = "Computer";
       attributes.put("winner",winner);
       return new ModelAndView(attributes,"winner.moustache");
     }
     Variable.turn++;
-  	attributes.put("atom",Variable.atoms.initialState());
-  	return new ModelAndView(attributes,"play.moustache");
+    attributes.put("atom",Variable.atoms.initialState());
+    return new ModelAndView(attributes,"play.moustache"); 
 	},
 		new MustacheTemplateEngine()
 	);

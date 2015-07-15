@@ -1,0 +1,18 @@
+<!-- <html>
+	<body>
+		<form action="/play" method="post">
+		<input type="hidden" value="1" name="row">
+		<input type="hidden" value="1" name="column">
+		<META HTTP-EQUIV="REFRESH" CONTENT="0 ;http://localhost:4567/play"/>
+	</body>
+</html> -->
+<html>
+	<body align="center" bgcolor="black">
+		<!-- <font size="8" color="white">play</font>
+		<h1></h1>
+		{{#atom}}
+			{{{toStringHidden}}}
+		{{/atom}} -->
+		<META HTTP-EQUIV="REFRESH" CONTENT="0 ;/play"/>
+	</body>
+</html>
