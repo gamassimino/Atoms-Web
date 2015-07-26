@@ -94,11 +94,14 @@ public class AtomState implements AdversarySearchState{
 					}
 				else{
 					if(board[i][j].getPlayer() == 1){
-						string +=("<form action="+'"'+"/play2"+'"'+" method="+'"'+"post"+'"'+">");
+						if(!ends)
+							string +=("<form action="+'"'+"/play2"+'"'+" method="+'"'+"post"+'"'+">");
 						string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+board[i][j].getNumber()+"red.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+"></button>");
 						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+i+'"'+" name="+'"'+"row"+'"'+">");
 						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+j+'"'+" name="+'"'+"column"+'"'+">");
 						string +=("</td>");
+						if(!ends)
+							string +=("</form>");
 					}
 					if(board[i][j].getPlayer() == 2){
 
