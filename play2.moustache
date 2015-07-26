@@ -1,0 +1,9 @@
+<html>
+	<body align="center" bgcolor="black">
+		<font size="8" color="white">play</font>
+		<h1></h1>
+		{{#atom}}
+			{{{toString2}}}
+		{{/atom}}
+	</body>
+</html>

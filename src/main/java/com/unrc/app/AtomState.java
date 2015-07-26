@@ -74,6 +74,48 @@ public class AtomState implements AdversarySearchState{
 		return string;
 	}
 
+	public String toString2(){
+		AtomProblem problem = new AtomProblem();
+		boolean ends = problem.end(this);
+		String string = "";
+		string +=("<table align="+'"'+"center"+'"'+" bgcolor="+'"'+"white"+'"'+" border="+'"'+"1"+'"'+">");
+		for (int i=0; i<6; i++) {
+			string +=("<tr>");
+			for (int j = 0; j<10; j++) {
+				if(board[i][j] == null){
+					if(!ends)
+						string +=("<form action="+'"'+"/play2"+'"'+" method="+'"'+"post"+'"'+">");
+					string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+"none.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+"></button>");
+					string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+i+'"'+" name="+'"'+"row"+'"'+">");
+					string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+j+'"'+" name="+'"'+"column"+'"'+">");
+					string +=("</td>");
+					if(!ends)
+						string +=("</form>");
+					}
+				else{
+					if(board[i][j].getPlayer() == 1){
+						string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+board[i][j].getNumber()+"red.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+ "></button>");
+						string +=("</td>");
+					}
+					if(board[i][j].getPlayer() == 2){
+
+						if(!ends)
+							string +=("<form action="+'"'+"/play2"+'"'+" method="+'"'+"post"+'"'+">");
+						string +=("<td width="+'"'+"20"+'"'+" align="+'"'+"center"+'"'+"><button type="+'"'+"submit"+'"'+"><img src="+'"'+board[i][j].getNumber()+"yellow.png"+'"'+'"'+"width="+'"'+"60"+'"'+"height="+'"'+"60"+'"'+"></button>");
+						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+i+'"'+" name="+'"'+"row"+'"'+">");
+						string +=("<input type="+'"'+"hidden"+'"'+" value="+'"'+j+'"'+" name="+'"'+"column"+'"'+">");
+						string +=("</td>");
+						if(!ends)
+							string +=("</form>");
+					}
+				}
+			}
+			string +=("</tr>");
+		}
+		string +=("</table>");
+		return string;
+	}
+
 /* this method clone an state, but with out her references,this is uses when overlap the data*/
 	public AtomState clone() {
     if (this == null) 

@@ -19,5 +19,8 @@
 		<form action="/dificulty" method="post">
 			<h1><button>Play New Game</h1></button>
 		</form>
+		<form action="/playAux2" method="post">
+			<h1><button>Player Vs Player</h1></button>
+		</form>
 	</body>
 </html>

@@ -55,6 +55,41 @@ public class App{
   	new MustacheTemplateEngine()
   );
 
+  post("/playAux2", (request, response) -> {
+    Map<String, Object> attributes = new HashMap<>();
+    Variable.atoms  = new AtomProblem();
+    Variable.turn = 1;
+    attributes.put("atom",Variable.atoms.initialState());
+    return new ModelAndView(attributes, "play2.moustache");
+  },
+    new MustacheTemplateEngine()
+  );
+
+  /*El jugador nro dos(amarillo) juega sin problemas pero el jugaador nro 1(rojo) no incrementa el numero de atomos y por ende no explota*/
+  post("/play2",(request,response) -> {
+    Map<String, Object> attributes = new HashMap<>();
+    String row = request.queryParams("row");
+    String column =request.queryParams("column");
+    String player =request.queryParams("player");
+    String winner = "";
+    Integer turn = ((Variable.turn)%2)+1;
+    Variable.atoms = new AtomProblem(Variable.atoms.putAnAtom(Variable.atoms.initialState(),(Integer.parseInt(row)),(Integer.parseInt(column)),new Atom(turn)));
+    if(Variable.atoms.end(Variable.atoms.initialState())){
+      attributes.put("atom",Variable.atoms.initialState());
+      if(player == "1")
+        winner = "player 1";
+      else
+        winner = "Player 2";
+      attributes.put("winner",winner);
+      return new ModelAndView(attributes,"winner.moustache");
+    }
+    Variable.turn++;
+    attributes.put("atom",Variable.atoms.initialState());
+    return new ModelAndView(attributes,"play2.moustache");
+  },
+    new MustacheTemplateEngine()
+  );
+
   /*Tiene varios bugs al momento de jugar por ejemplo cuandoqueremos insertar una ficha en la posicio derecha inferiror la ficha por defecto
   al igual como otros mas que cuando alguien ganas nomuestra el tablero con todas las fichas explotadas hay que solucionarlo*/
 	post("/play",(request,response) -> {
